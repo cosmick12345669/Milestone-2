@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crash Conditions Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <nav>
+        <a href="/">Home</a>
+        <a href="/conditions">Crash Conditions</a>
+        <a href="/discover">Discover Trends</a>
+    </nav>
+
+    <main>
+        <h1>Crash Conditions Dashboard</h1>
+
+        <p>
+            Explore how atmospheric, lighting and road-surface conditions
+            are associated with reported Victorian road crashes.
+        </p>
+
+        <h2>Crash Summary by Condition Combination</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Atmospheric Condition</th>
+                    <th>Light Condition</th>
+                    <th>Road Surface</th>
+                    <th>Total Crashes</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for row in results %}
+                <tr>
+                    <td>{{ row["ATMOSPHERIC_CONDITION"] }}</td>
+                    <td>{{ row["LIGHT_CONDITION"] }}</td>
+                    <td>{{ row["ROAD_SURFACE"] }}</td>
+                    <td>{{ row["TOTAL_CRASHES"] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </main>
+
+</body>
+</html>
