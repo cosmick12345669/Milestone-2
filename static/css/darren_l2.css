@@ -1,0 +1,147 @@
+/* Reset default margins and set up a modern font */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Center container and limit width for clean presentation */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+h3 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+}
+
+/* Form Layout */
+form {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* Target labels and dropdowns inside the form */
+form label {
+    font-weight: 600;
+    color: #34495e;
+}
+
+form select {
+    padding: 8px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+form select:focus {
+    border-color: #3498db;
+}
+
+/* Button Container wrapper to alignment buttons */
+form button[type="submit"], 
+form button[type="reset"] {
+    grid-column: span 1; /* Allows them to sit side by side */
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+form button[type="submit"] {
+    background-color: #2ecc71;
+    color: white;
+}
+
+form button[type="submit"]:hover {
+    background-color: #27ae60;
+}
+
+form button[type="reset"] {
+    background-color: #95a5a6;
+    color: white;
+}
+
+form button[type="reset"]:hover {
+    background-color: #7f8c8d;
+}
+
+/* Divider line */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ecf0f1;
+    margin: 25px 0;
+}
+
+/* Filter Summary Text */
+p strong {
+    color: #7f8c8d;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Dynamic Results Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+table th {
+    background-color: #34495e;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+table tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Zebra striping for table rows */
+table tbody tr:nth-of-type(even) {
+    background-color: #f8f9fa;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #34495e;
+}
+
+/* Style for "No records match" row */
+table td[colspan="5"] {
+    text-align: center;
+    color: #e74c3c;
+    font-style: italic;
+    padding: 20px;
+}
