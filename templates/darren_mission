@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+   <title>
+        Mission
+   </title> 
+   <link rel="stylesheet" href="/static/darren_mission.css">
+</head>
+
+<div class ="container">
+    <div class = "menubar"> 
+    <h1 class="logo"> 
+        Roadwise Victoria
+    </h1>
+    <nav class= "navbar">
+        <a href="darren_mission">Home</a>
+        <a href="">Explorer</a>
+        <a href="">Mission</a>
+        <a href="">Deep Dive</a>
+    </nav>
+    </div>
+
+    <div class = "missionstatment">
+    <h1 class="ourmission">
+        Our Mission
+    </h1>
+    <p class="missiontext">
+        Our website helps to prevent road incidents by giving transport engineers an interactive map collaborating all crash information for specific areas/roads. It also aims to help learner drivers by providing the most common factors from crashes in a specific area, e.g. speed, weather & road conditions etc. 
+    </p>
+    </div>
+
+<div class ="targetpersona">
+    <h4 class = "personas">
+        Transport Engineers
+    </h4>
+    <p class ="personasuse">
+        Transport engineers can use our website to quickly identify crash hotspots and the statistics pertaining to it 
+    </p>
+    <h4 class ="personas"> 
+        Young Drivers 
+    </h4>
+       This website shows young drivers simplified crash statistics 
+    </p>
+    </div>
+</div>
